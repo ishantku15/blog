@@ -24,6 +24,29 @@
       "date": "2025-06-02T07:45:17.522Z",
       "views": 0,
       "id": 1748850317522
+    },
+    {
+      "title": "Top 10 Free Web Design Tools in 2025 | Best Free Tools for Designers",
+      "slug": "top-10-free-web-design-tools-in-2025-best-free-tools-for-designers",
+      "category": "web-development",
+      "author": {
+        "id": 1748866370462,
+        "name": "Ishant",
+        "avatar": "https://ishant.shop/logo.png"
+      },
+      "excerpt": "Discover the top 10 free tools every web designer should use in 2025—from Figma and Coolors to Canva and Heroicons. Boost your workflow with these must-have design resources.",
+      "content": "🎨 1. Figma\n\nOfficial Website: https://www.figma.com\nWhat it does: Collaborative design tool\nWhy it’s great:\n\nBrowser-based and fast\n\nGreat for UI/UX and wireframing\n\nWorks well for teams or solo designers\n\n\n✅ Pro Tip: Use Figma Community to explore free UI kits and templates.\n\n\n---\n\n🌈 2. Coolors\n\nOfficial Website: https://coolors.co\nWhat it does: Color palette generator\nWhy it’s great:\n\nGenerate beautiful color schemes instantly\n\nExport as SCSS, PNG, or CSS variables\n\n\n🎯 Ideal for: Fast color experimentation.\n\n\n---\n\n🖼️ 3. Heroicons\n\nOfficial Website: https://heroicons.com\nWhat it does: Free MIT-licensed SVG icons\nWhy it’s great:\n\nTailwindCSS friendly\n\nClean, minimal design\n\nCopy SVG or use as React components\n\n\n\n---\n\n📷 4. Unsplash\n\nOfficial Website: https://unsplash.com\nWhat it does: Free stock photos\nWhy it’s great:\n\nHigh-resolution, royalty-free images\n\nPerfect for hero sections and blog visuals\n\n\n📌 Bookmark it when working on client sites!\n\n\n---\n\n✏️ 5. Google Fonts\n\nOfficial Website: https://fonts.google.com\nWhat it does: Free web fonts\nWhy it’s great:\n\n1,000+ fonts available\n\nEasily integrate with <link> or CSS import\n\nGreat for performance\n\n\n\n---\n\n🎯 6. Squoosh\n\nOfficial Website: https://squoosh.app\nWhat it does: Image optimization\nWhy it’s great:\n\nCompress JPG, PNG, and WebP\n\nSee before/after file sizes instantly\n\nRuns offline in your browser!\n\n\n\n---\n\n🧰 7. Canva\n\nOfficial Website: https://www.canva.com\nWhat it does: Graphic design tool\nWhy it’s great:\n\nDrag-and-drop simplicity\n\nGreat for social graphics, logos, flyers\n\nMany free templates\n\n\n🌟 Use it for quick mockups and social banners.\n\n\n---\n\n🔎 8. PageSpeed Insights\n\nOfficial Website: https://pagespeed.web.dev\nWhat it does: Website performance analyzer\nWhy it’s great:\n\nGoogle-backed tool\n\nMeasures Core Web Vitals\n\nGives actionable suggestions\n\n\n📈 Optimize your site speed for better SEO.\n\n\n---\n\n📚 9. Frontend Mentor\n\nOfficial Website: https://www.frontendmentor.io\nWhat it does: Practice real-world HTML/CSS/JS projects\nWhy it’s great:\n\nGet real designs to code from\n\nImprove your skills with challenges\n\n\n🛠 Perfect for both beginners and pros looking to sharpen their front-end chops.\n\n\n---\n\n📄 10. ReadMe.so\n\nOfficial Website: https://readme.so\nWhat it does: Easy README generator\nWhy it’s great:\n\nDrag-and-drop sections\n\nExport clean Markdown\n\nIdeal for GitHub projects\n\n\n\n---\n\n🚀 Final Thoughts\n\nYou don’t need expensive tools to create beautiful, functional websites. These free resources are enough to take your design workflow to the next level in 2025. Bookmark them, use them, and most importantly—keep experimenting!",
+      "image": "data:image/jpeg;base64,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",
+      "tags": [],
+      "status": "published",
+      "meta": {
+        "title": "Top 10 Free Web Design Tools in 2025 | Best Free Tools for Designers",
+        "description": "Discover the top 10 free tools every web designer should use in 2025—from Figma and Coolors to Canva and Heroicons. Boost your workflow with these must-have design resources.",
+        "keywords": ""
+      },
+      "date": "2025-06-02T12:11:26.390Z",
+      "views": 0,
+      "id": 1748866286390
     }
   ],
   "categories": [
@@ -45,11 +68,28 @@
   ],
   "authors": [
     {
-      "id": 1,
       "name": "Admin",
-      "email": "admin@ishantwebworks.com",
+      "email": "ishant150407@gmail.com",
+      "bio": "Administrator of Ishant Webworks Blogs",
       "avatar": "https://ui-avatars.com/api/?name=Admin&background=random",
-      "bio": "Administrator of Ishant Webworks Blogs"
+      "social": {
+        "twitter": "Instagram",
+        "linkedin": "",
+        "github": ""
+      },
+      "id": 1
+    },
+    {
+      "name": "Ishant",
+      "email": "ishant150407@gmail.com",
+      "bio": "Founder of Ishant webworks",
+      "avatar": "https://ishant.shop/logo.png",
+      "social": {
+        "twitter": "",
+        "linkedin": "",
+        "github": ""
+      },
+      "id": 1748866370462
     }
   ],
   "settings": {
@@ -73,6 +113,30 @@
     }
   },
   "activity": [
+    {
+      "id": 1748866386231,
+      "type": "update",
+      "message": "Updated post: Top 10 Free Web Design Tools in 2025 | Best Free Tools for Designers",
+      "date": "2025-06-02T12:13:06.231Z"
+    },
+    {
+      "id": 1748866370462,
+      "type": "create",
+      "message": "Created new author: Ishant",
+      "date": "2025-06-02T12:12:50.462Z"
+    },
+    {
+      "id": 1748866286390,
+      "type": "create",
+      "message": "Created new post: Top 10 Free Web Design Tools in 2025 | Best Free Tools for Designers",
+      "date": "2025-06-02T12:11:26.390Z"
+    },
+    {
+      "id": 1748860420635,
+      "type": "update",
+      "message": "Updated author: Admin",
+      "date": "2025-06-02T10:33:40.635Z"
+    },
     {
       "id": 1748850317523,
       "type": "create",
