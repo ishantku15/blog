@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read our latest article on Ishant Webworks Blogs.">
+  <meta property="og:type" content="article">
+  <title>Article | Ishant Webworks Blogs</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/posts.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="particles-container small"></div>
+  
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <span class="logo-text">Ishant<span class="highlight">Webworks</span></span>
+          </a>
+        </div>
+        <div class="nav-items">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="index.html#blog" class="nav-link active">Blog</a>
+          <a href="index.html#about" class="nav-link">About</a>
+          <a href="index.html#contact" class="nav-link">Contact</a>
+          <a href="https://ishant.shop" class="nav-link shop-link" target="_blank">Visit Ishant Webworks</a>
+        </div>
+        <div class="theme-toggle">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="post-header" id="post-header">
+    <!-- Post header will be loaded here -->
+    <div class="loading-spinner"></div>
+  </section>
+
+  <section class="post-content">
+    <div class="container">
+      <div class="post-container">
+        <main class="post-main" id="post-main">
+          <!-- Post content will be loaded here -->
+          <div class="loading-spinner"></div>
+        </main>
+        <aside class="post-sidebar">
+          <div class="author-card glass-card">
+            <div class="author-image" id="author-image">
+              <!-- Author image will be loaded here -->
+            </div>
+            <div class="author-info" id="author-info">
+              <!-- Author info will be loaded here -->
+            </div>
+          </div>
+          <div class="share-card glass-card">
+            <h3>Share This Article</h3>
+            <div class="share-buttons">
+              <button class="share-btn facebook"><i class="fab fa-facebook-f"></i></button>
+              <button class="share-btn twitter"><i class="fab fa-twitter"></i></button>
+              <button class="share-btn linkedin"><i class="fab fa-linkedin-in"></i></button>
+              <button class="share-btn copy" id="copy-link"><i class="fas fa-link"></i></button>
+            </div>
+          </div>
+          <div class="related-posts glass-card">
+            <h3>Related Articles</h3>
+            <div class="related-posts-list" id="related-posts">
+              <!-- Related posts will be loaded here -->
+              <div class="loading-spinner small"></div>
+            </div>
+          </div>
+          <div class="newsletter-sidebar glass-card">
+            <h3>Subscribe</h3>
+            <p>Get the latest articles delivered to your inbox.</p>
+            <form id="sidebar-newsletter-form" class="sidebar-newsletter-form" 
+      action="https://formsubmit.co/ishant150407@gmail.com" method="POST">
+  <input type="email" name="email" placeholder="Your email address" required>
+  <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html"> <!-- Replace with your thank you page -->
+  <input type="hidden" name="_captcha" value="false"> <!-- Disables captcha -->
+  <input type="hidden" name="_template" value="box"> <!-- Makes form submission more compact -->
+  <button type="submit" class="btn btn-primary">Subscribe</button>
+</form>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="post-comments">
+    <div class="container">
+      <div class="comments-container glass-card">
+        <h2>Comments</h2>
+        <div class="comment-form">
+          <h3>Leave a Comment</h3>
+          <form id="comment-form">
+            <div class="form-group">
+              <label for="comment-name">Name</label>
+              <input type="text" id="comment-name" required>
+            </div>
+            <div class="form-group">
+              <label for="comment-email">Email</label>
+              <input type="email" id="comment-email" required>
+            </div>
+            <div class="form-group">
+              <label for="comment-content">Comment</label>
+              <textarea id="comment-content" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Post Comment</button>
+          </form>
+        </div>
+        <div class="comments-list" id="comments-list">
+          <!-- Comments will be loaded here -->
+          <p class="no-comments">No comments yet. Be the first to comment!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="more-articles">
+    <div class="container">
+      <h2 class="section-title">More Articles</h2>
+      <div class="more-articles-grid" id="more-articles">
+        <!-- More articles will be loaded here -->
+        <div class="loading-spinner"></div>
+      </div>
+      <div class="more-articles-cta">
+        <a href="index.html#blog" class="btn btn-outline">View All Articles</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="index.html">
+            <span class="logo-text">Ishant<span class="highlight">Webworks</span></span>
+          </a>
+          <p>Creating exceptional digital experiences.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html#featured">Featured</a></li>
+              <li><a href="index.html#blog">Blog</a></li>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="admin/index.html">Admin</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Connect</h3>
+            <div class="social-links">
+              <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Ishant Webworks. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="scroll-top" class="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/post.js"></script>
+</body>
+</html>

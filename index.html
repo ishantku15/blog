@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ishant Webworks Blogs - Discover insights, tutorials, and news about web development, design, and technology.">
+  <meta name="keywords" content="Ishant Webworks, blog, web development, design, technology">
+  <meta name="author" content="Ishant Webworks">
+  <meta property="og:title" content="Ishant Webworks Blogs">
+  <meta property="og:description" content="Discover insights, tutorials, and news about web development, design, and technology.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://blogs.ishant.shop">
+  <title>Ishant Webworks Blogs</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="particles-container"></div>
+  
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <span class="logo-text">Ishant<span class="highlight">Webworks Blogs</span></span>
+          </a>
+        </div>
+        <div class="nav-items">
+          <a href="#" class="nav-link active">Home</a>
+          <a href="#blog" class="nav-link">Blog</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="https://ishant.shop" class="nav-link shop-link" target="_blank">Visit Ishant Webworks</a>
+        </div>
+        <div class="theme-toggle">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="animate-up">Welcome to <span class="highlight">Ishant Webworks</span> Blog</h1>
+        <p class="animate-up delay-1">Discover insights, tutorials, and news about web development, design, and technology.</p>
+        <div class="hero-cta animate-up delay-2">
+          <a href="#blog" class="btn btn-primary">Explore Articles</a>
+          <a href="#about" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="featured" class="featured">
+    <div class="container">
+      <h2 class="section-title">Featured Posts</h2>
+      <div class="featured-posts" id="featured-posts">
+        <!-- Featured posts will be loaded here -->
+        <div class="loading-spinner"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="blog">
+    <div class="container">
+      <h2 class="section-title">Latest Articles</h2>
+      <div class="blog-filter">
+        <div class="search-box">
+          <input type="text" id="search-input" placeholder="Search articles...">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="categories">
+          <span class="category active" data-category="all">All</span>
+          <span class="category" data-category="web-development">Web Development</span>
+          <span class="category" data-category="design">Design</span>
+          <span class="category" data-category="technology">Technology</span>
+        </div>
+      </div>
+      <div class="blog-posts" id="blog-posts">
+        <!-- Blog posts will be loaded here -->
+        <div class="loading-spinner"></div>
+      </div>
+      <div class="pagination">
+        <button id="load-more" class="btn btn-outline">Load More</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2 class="section-title">About Ishant Webworks</h2>
+          <p>Ishant WebWorks is a Moradabad-based web design service focused on building sleek, responsive, and affordable static websites for small businesses, startups, and creatives. We believe in simplicity, speed, and style — creating websites that load fast, look great on all devices, and perfectly reflect your brand. Whether you're a gym owner, school, local shop, or freelancer, we turn your ideas into modern websites that leave a lasting impression — all without the need for complex backend systems or expensive tech stacks.</p>
+          <p>We also operate <a href="https://ishant.shop" target="_blank">ishant.shop</a>, your one-stop destination for premium digital products, templates, and resources to elevate your online presence.</p>
+          <a href="https://ishant.shop" class="btn btn-primary" target="_blank">Visit Ishant Webworks</a>
+        </div>
+        <div class="about-image glass-card">
+          <div class="shop-preview">
+            <h3>Ishant Webworks</h3>
+            <p>Premium digital products and templates</p>
+            <ul>
+              <li><i class="fas fa-check"></i> Static Website Development</li>
+              <li><i class="fas fa-check"></i> Fast Loading</li>
+              <li><i class="fas fa-check"></i> SEO Optimized</li>
+              <li><i class="fas fa-check"></i> Premium Support</li>
+            </ul>
+            <a href="https://ishant.shop" class="btn btn-accent" target="_blank">Explore Ishant Webworks</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="newsletter" class="newsletter">
+    <div class="container">
+      <div class="newsletter-content glass-card">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay updated with our latest articles, tutorials, and offers from Ishant Webworks.</p>
+        <form id="newsletter-form" class="newsletter-form" action="https://formsubmit.co/ishant150407@gmail.com" method="POST">
+  <input type="email" name="email" placeholder="Your email address" required>
+  <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html"> <!-- Replace with your thank you page -->
+  <input type="hidden" name="_captcha" value="false"> <!-- Disables captcha -->
+  <button type="submit" class="btn btn-primary">Subscribe</button>
+</form>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p>ishant150407@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Address</h3>
+              <p>Moradabad , Uttar Pradesh</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h3>Phone</h3>
+              <p>+91 8534848815</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form glass-card" action="https://formsubmit.co/ishant150407@gmail.com" method="POST">
+  <!-- Add these hidden inputs for Formsubmit features -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="http://yourwebsite.com/thank-you.html"> <!-- Replace with your thank you page -->
+  <input type="hidden" name="_subject" value="New Contact Form Submission">
+  
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div class="form-group">
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" required>
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="index.html">
+            <span class="logo-text">Ishant<span class="highlight">Webworks</span></span>
+          </a>
+          <p>Creating exceptional digital experiences.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#featured">Featured</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Sitemap</a></li>
+              
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Connect</h3>
+            <div class="social-links">
+              <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Ishant Webworks. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="scroll-top" class="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/blog-data.js"></script>
+</body>
+</html>

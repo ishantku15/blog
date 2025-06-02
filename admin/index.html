@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin Panel | Ishant Webworks Blogs</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/admin.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css">
+</head>
+<body class="admin-body">
+  <div class="admin-container">
+    <aside class="admin-sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <a href="../index.html" target="_blank">
+            <span class="logo-text">Ishant<span class="highlight">Webworks</span></span>
+          </a>
+        </div>
+        <h2>Admin Panel</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-item active" data-section="dashboard">
+          <i class="fas fa-tachometer-alt"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="#" class="nav-item" data-section="posts">
+          <i class="fas fa-file-alt"></i>
+          <span>Posts</span>
+        </a>
+        <a href="#" class="nav-item" data-section="create">
+          <i class="fas fa-plus-circle"></i>
+          <span>Create Post</span>
+        </a>
+        <a href="#" class="nav-item" data-section="categories">
+          <i class="fas fa-tags"></i>
+          <span>Categories</span>
+        </a>
+        <a href="#" class="nav-item" data-section="authors">
+          <i class="fas fa-users"></i>
+          <span>Authors</span>
+        </a>
+        <a href="#" class="nav-item" data-section="settings">
+          <i class="fas fa-cog"></i>
+          <span>Settings</span>
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="#" id="logout-btn" class="logout-btn">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>Logout</span>
+        </a>
+      </div>
+    </aside>
+    
+    <main class="admin-main">
+      <header class="admin-header">
+        <div class="header-search">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search...">
+        </div>
+        <div class="header-actions">
+          <button id="export-data" class="btn btn-outline btn-sm">
+            <i class="fas fa-download"></i>
+            Export Data
+          </button>
+          <button id="import-data" class="btn btn-outline btn-sm">
+            <i class="fas fa-upload"></i>
+            Import Data
+          </button>
+          <input type="file" id="import-file" accept=".json" style="display: none;">
+          <button id="preview-site" class="btn btn-primary btn-sm">
+            <i class="fas fa-eye"></i>
+            Preview Site
+          </button>
+        </div>
+      </header>
+      
+      <div class="admin-content">
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="content-section active">
+          <h1>Dashboard</h1>
+          <div class="dashboard-stats">
+            <div class="stat-card glass-card">
+              <div class="stat-icon">
+                <i class="fas fa-file-alt"></i>
+              </div>
+              <div class="stat-info">
+                <h3>Total Posts</h3>
+                <p id="total-posts">0</p>
+              </div>
+            </div>
+            <div class="stat-card glass-card">
+              <div class="stat-icon">
+                <i class="fas fa-tags"></i>
+              </div>
+              <div class="stat-info">
+                <h3>Categories</h3>
+                <p id="total-categories">0</p>
+              </div>
+            </div>
+            <div class="stat-card glass-card">
+              <div class="stat-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="stat-info">
+                <h3>Authors</h3>
+                <p id="total-authors">0</p>
+              </div>
+            </div>
+            <div class="stat-card glass-card">
+              <div class="stat-icon">
+                <i class="fas fa-eye"></i>
+              </div>
+              <div class="stat-info">
+                <h3>Total Views</h3>
+                <p id="total-views">0</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="recent-activity">
+            <h2>Recent Activity</h2>
+            <div class="activity-list glass-card" id="activity-list">
+              <!-- Activity will be loaded here -->
+              <div class="no-data-message">No recent activity.</div>
+            </div>
+          </div>
+          
+          <div class="quick-actions">
+            <h2>Quick Actions</h2>
+            <div class="actions-grid">
+              <button class="action-card glass-card" data-section="create">
+                <i class="fas fa-plus-circle"></i>
+                <span>Create New Post</span>
+              </button>
+              <button class="action-card glass-card" data-section="categories">
+                <i class="fas fa-tags"></i>
+                <span>Manage Categories</span>
+              </button>
+              <button class="action-card glass-card" data-section="authors">
+                <i class="fas fa-users"></i>
+                <span>Manage Authors</span>
+              </button>
+              <button class="action-card glass-card" id="export-data-dash">
+                <i class="fas fa-download"></i>
+                <span>Export Data</span>
+              </button>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Posts Section -->
+        <section id="posts" class="content-section">
+          <h1>Manage Posts</h1>
+          <div class="section-header">
+            <div class="filter-options">
+              <select id="category-filter">
+                <option value="">All Categories</option>
+              </select>
+              <select id="status-filter">
+                <option value="">All Status</option>
+                <option value="published">Published</option>
+                <option value="draft">Draft</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" data-section="create">
+              <i class="fas fa-plus"></i> New Post
+            </button>
+          </div>
+          
+          <div class="posts-list glass-card">
+            <div class="table-responsive">
+              <table id="posts-table">
+                <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Author</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="posts-table-body">
+                  <!-- Posts will be loaded here -->
+                </tbody>
+              </table>
+            </div>
+            <div class="no-data-message" id="no-posts-message">No posts found.</div>
+          </div>
+        </section>
+        
+        <!-- Create Post Section -->
+        <section id="create" class="content-section">
+          <div class="section-header">
+            <h1 id="post-form-title">Create New Post</h1>
+            <div>
+              <button id="save-draft" class="btn btn-outline">
+                <i class="fas fa-save"></i> Save Draft
+              </button>
+              <button id="publish-post" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i> Publish
+              </button>
+            </div>
+          </div>
+          
+          <form id="post-form" class="post-form">
+            <input type="hidden" id="post-id">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="post-title">Title</label>
+                <input type="text" id="post-title" required>
+              </div>
+              <div class="form-group">
+                <label for="post-slug">Slug</label>
+                <input type="text" id="post-slug" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="post-category">Category</label>
+                <select id="post-category" required>
+                  <!-- Categories will be loaded here -->
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="post-author">Author</label>
+                <select id="post-author" required>
+                  <!-- Authors will be loaded here -->
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="post-excerpt">Excerpt</label>
+              <textarea id="post-excerpt" rows="2" required></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="post-featured-image">Featured Image URL</label>
+              <input type="text" id="post-featured-image" placeholder="https://example.com/image.jpg" required>
+              <div class="image-preview" id="image-preview"></div>
+            </div>
+            
+            <div class="form-group">
+              <label for="post-content">Content</label>
+              <textarea id="post-content" required></textarea>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="post-tags">Tags (comma separated)</label>
+                <input type="text" id="post-tags" placeholder="web, design, technology">
+              </div>
+              <div class="form-group">
+                <label for="post-status">Status</label>
+                <select id="post-status">
+                  <option value="published">Published</option>
+                  <option value="draft">Draft</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label>SEO Settings</label>
+              <div class="seo-settings glass-card">
+                <div class="form-group">
+                  <label for="post-meta-title">Meta Title</label>
+                  <input type="text" id="post-meta-title">
+                </div>
+                <div class="form-group">
+                  <label for="post-meta-description">Meta Description</label>
+                  <textarea id="post-meta-description" rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="post-meta-keywords">Meta Keywords</label>
+                  <input type="text" id="post-meta-keywords" placeholder="comma separated keywords">
+                </div>
+              </div>
+            </div>
+          </form>
+        </section>
+        
+        <!-- Categories Section -->
+        <section id="categories" class="content-section">
+          <h1>Manage Categories</h1>
+          <div class="section-header">
+            <div class="add-category-form">
+              <input type="text" id="new-category-name" placeholder="New category name">
+              <input type="text" id="new-category-slug" placeholder="category-slug">
+              <button id="add-category" class="btn btn-primary">
+                <i class="fas fa-plus"></i> Add Category
+              </button>
+            </div>
+          </div>
+          
+          <div class="categories-list glass-card">
+            <div class="table-responsive">
+              <table id="categories-table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Slug</th>
+                    <th>Posts</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="categories-table-body">
+                  <!-- Categories will be loaded here -->
+                </tbody>
+              </table>
+            </div>
+            <div class="no-data-message" id="no-categories-message">No categories found.</div>
+          </div>
+        </section>
+        
+        <!-- Authors Section -->
+        <section id="authors" class="content-section">
+          <h1>Manage Authors</h1>
+          <div class="section-header">
+            <button id="add-author-btn" class="btn btn-primary">
+              <i class="fas fa-plus"></i> Add Author
+            </button>
+          </div>
+          
+          <div class="authors-list glass-card">
+            <div class="table-responsive">
+              <table id="authors-table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Posts</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="authors-table-body">
+                  <!-- Authors will be loaded here -->
+                </tbody>
+              </table>
+            </div>
+            <div class="no-data-message" id="no-authors-message">No authors found.</div>
+          </div>
+          
+          <!-- Add/Edit Author Modal -->
+          <div id="author-modal" class="modal">
+            <div class="modal-content glass-card">
+              <div class="modal-header">
+                <h2 id="author-modal-title">Add New Author</h2>
+                <button class="close-modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <form id="author-form">
+                  <input type="hidden" id="author-id">
+                  <div class="form-group">
+                    <label for="author-name">Name</label>
+                    <input type="text" id="author-name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="author-email">Email</label>
+                    <input type="email" id="author-email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="author-bio">Bio</label>
+                    <textarea id="author-bio" rows="3"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="author-avatar">Avatar URL</label>
+                    <input type="text" id="author-avatar" placeholder="https://example.com/avatar.jpg">
+                    <div class="avatar-preview" id="avatar-preview"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="author-social">Social Links</label>
+                    <div class="social-links-form">
+                      <div class="social-link-row">
+                        <input type="text" placeholder="Twitter" id="author-twitter">
+                        <input type="text" placeholder="https://twitter.com/username">
+                      </div>
+                      <div class="social-link-row">
+                        <input type="text" placeholder="LinkedIn" id="author-linkedin">
+                        <input type="text" placeholder="https://linkedin.com/in/username">
+                      </div>
+                      <div class="social-link-row">
+                        <input type="text" placeholder="GitHub" id="author-github">
+                        <input type="text" placeholder="https://github.com/username">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-actions">
+                    <button type="button" class="btn btn-outline close-modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary" id="save-author">Save</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Settings Section -->
+        <section id="settings" class="content-section">
+          <h1>Blog Settings</h1>
+          
+          <form id="settings-form" class="settings-form">
+            <div class="settings-section glass-card">
+              <h2>General Settings</h2>
+              <div class="form-group">
+                <label for="blog-title">Blog Title</label>
+                <input type="text" id="blog-title" value="Ishant Webworks Blogs">
+              </div>
+              <div class="form-group">
+                <label for="blog-description">Blog Description</label>
+                <textarea id="blog-description" rows="2">Discover insights, tutorials, and news about web development, design, and technology.</textarea>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="posts-per-page">Posts Per Page</label>
+                  <input type="number" id="posts-per-page" value="6" min="1" max="20">
+                </div>
+                <div class="form-group">
+                  <label for="featured-posts-count">Featured Posts Count</label>
+                  <input type="number" id="featured-posts-count" value="3" min="1" max="10">
+                </div>
+              </div>
+            </div>
+            
+            <div class="settings-section glass-card">
+              <h2>SEO Settings</h2>
+              <div class="form-group">
+                <label for="meta-title">Default Meta Title</label>
+                <input type="text" id="meta-title" value="Ishant Webworks Blogs">
+              </div>
+              <div class="form-group">
+                <label for="meta-description">Default Meta Description</label>
+                <textarea id="meta-description" rows="2">Discover insights, tutorials, and news about web development, design, and technology.</textarea>
+              </div>
+              <div class="form-group">
+                <label for="meta-keywords">Default Meta Keywords</label>
+                <input type="text" id="meta-keywords" value="Ishant Webworks, blog, web development, design, technology">
+              </div>
+            </div>
+            
+            <div class="settings-section glass-card">
+              <h2>Social Media</h2>
+              <div class="form-group">
+                <label for="facebook-url">Facebook URL</label>
+                <input type="text" id="facebook-url" placeholder="https://facebook.com/ishantwebworks">
+              </div>
+              <div class="form-group">
+                <label for="twitter-url">Twitter URL</label>
+                <input type="text" id="twitter-url" placeholder="https://twitter.com/ishantwebworks">
+              </div>
+              <div class="form-group">
+                <label for="instagram-url">Instagram URL</label>
+                <input type="text" id="instagram-url" placeholder="https://instagram.com/ishantwebworks">
+              </div>
+              <div class="form-group">
+                <label for="linkedin-url">LinkedIn URL</label>
+                <input type="text" id="linkedin-url" placeholder="https://linkedin.com/company/ishantwebworks">
+              </div>
+            </div>
+            
+            <div class="settings-section glass-card">
+              <h2>Ishant.shop Integration</h2>
+              <div class="form-group">
+                <label for="shop-url">Shop URL</label>
+                <input type="text" id="shop-url" value="https://ishant.shop">
+              </div>
+              <div class="form-group">
+                <label for="shop-description">Shop Description</label>
+                <textarea id="shop-description" rows="2">Premium digital products, templates, and resources to elevate your online presence.</textarea>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" id="show-shop-promo" checked>
+                <label for="show-shop-promo">Show Shop Promotion in Blog</label>
+              </div>
+            </div>
+            
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Save Settings</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+  </div>
+  
+  <div id="toast" class="toast"></div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

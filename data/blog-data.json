@@ -1,0 +1,83 @@
+{
+  "posts": [
+    {
+      "title": "🌟 Elevate Your Online Presence with Ishant WebWorks",
+      "slug": "-elevate-your-online-presence-with-ishant-webworks",
+      "category": "web-development",
+      "author": {
+        "id": 1,
+        "name": "Admin",
+        "avatar": "https://ui-avatars.com/api/?name=Admin&background=random"
+      },
+      "excerpt": "🚀 Looking to build a sleek, mobile-friendly website without breaking the bank? At Ishant WebWorks, we specialize in stunning static frontend websites for small businesses, creatives, and entrepreneurs. With affordable pricing, custom designs, and responsive layouts, we’ll help your brand shine online. Let’s bring your vision to life — beautifully and simply!\n\n",
+      "content": "🌟 Elevate Your Online Presence with Ishant WebWorks\nIn today's digital age, having a captivating online presence is crucial. Whether you're a budding entrepreneur, a creative artist, or a local business owner, your website is your digital storefront. That's where Ishant WebWorks steps in, offering top-notch frontend development services that blend aesthetics with functionality.\n\n🎨 Crafting Stunning Frontend Experiences\nAt Ishant WebWorks, the focus is on delivering visually appealing and user-friendly websites. Here's what sets them apart:\n\nStatic Website Development: Perfect for those who need a fast-loading, secure site without the complexities of backend systems.\n\nMobile-First Design: With the majority of users browsing on mobile devices, their designs ensure seamless experiences across all screen sizes.\n\nCustom UI/UX: Tailored designs that resonate with your brand's identity and engage your target audience effectively.\n\nSEO Optimization: Built with best practices to enhance your visibility on search engines.\n\nOngoing Support: Post-launch support to keep your website running smoothly.\n\n💰 Affordable Pricing for Every Need\nBudget shouldn't be a barrier to quality. Ishant WebWorks offers:\n\nBasic Website: ₹3499 – Ideal for portfolios or small businesses.\n\nStandard Website: ₹5999 – Great for growing businesses needing more pages and features.\n\nPremium Website: ₹9999 – Comprehensive package with custom animations and extended support.\n\nEach package is designed to provide value without compromising on quality.\n\n🖼️ A Glimpse into Their Portfolio\nFrom elegant restaurant websites to dynamic e-commerce fronts, Ishant WebWorks has a diverse portfolio:\n\nBusiness Websites: Clean and professional designs that instill trust.\n\nE-commerce Frontends: Showcasing products in an organized and appealing manner.\n\nPortfolio Sites: Highlighting creatives' work with flair.\n\nEducational Platforms: Informative and structured layouts for learning institutions.\n\n🗣️ What Clients Are Saying\n\"IshantWebWorks created a beautiful website for my bakery that perfectly represents my brand. The site loads quickly on all devices and has helped me attract more customers. Highly recommended!\"\n\n\"As a freelance photographer, I needed a portfolio website that showcases my work beautifully. Ishant delivered exactly what I wanted at an affordable price. The mobile experience is particularly impressive.\"\n\n📞 Let's Connect!\nReady to transform your online presence? Reach out:\n\n📍 Moradabad, Uttar Pradesh, India\n\n📞 +91 8534848815\n\n📧 ishant150407@gmail.com",
+      "image": "https://blog.zegocloud.com/wp-content/uploads/2024/03/types-of-web-development-services.jpg",
+      "tags": [
+        "web"
+      ],
+      "status": "published",
+      "meta": {
+        "title": "Affordable Frontend Website Design by Ishant WebWorks | Mobile-Responsive & Modern",
+        "description": "Get a stunning, mobile-friendly website for your business with Ishant WebWorks. Starting at just ₹3499, we create modern, static frontend websites that reflect your brand beautifully.",
+        "keywords": "frontend website design, static website, mobile responsive websites, affordable website development, Ishant WebWorks, custom website design India, website designer Moradabad, small business websites, fast-loading websites"
+      },
+      "date": "2025-06-02T07:45:17.522Z",
+      "views": 0,
+      "id": 1748850317522
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Web Development",
+      "slug": "web-development"
+    },
+    {
+      "id": 2,
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "id": 3,
+      "name": "Technology",
+      "slug": "technology"
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "email": "admin@ishantwebworks.com",
+      "avatar": "https://ui-avatars.com/api/?name=Admin&background=random",
+      "bio": "Administrator of Ishant Webworks Blogs"
+    }
+  ],
+  "settings": {
+    "blogTitle": "Ishant Webworks Blogs",
+    "blogDescription": "Discover insights, tutorials, and news about web development, design, and technology.",
+    "postsPerPage": 6,
+    "featuredPostsCount": 3,
+    "metaTitle": "Ishant Webworks Blogs",
+    "metaDescription": "Discover insights, tutorials, and news about web development, design, and technology.",
+    "metaKeywords": "Ishant Webworks, blog, web development, design, technology",
+    "socialLinks": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "",
+      "linkedin": ""
+    },
+    "shopIntegration": {
+      "url": "https://ishant.shop",
+      "description": "Premium digital products, templates, and resources to elevate your online presence.",
+      "showPromo": true
+    }
+  },
+  "activity": [
+    {
+      "id": 1748850317523,
+      "type": "create",
+      "message": "Created new post: 🌟 Elevate Your Online Presence with Ishant WebWorks",
+      "date": "2025-06-02T07:45:17.523Z"
+    }
+  ]
+}
